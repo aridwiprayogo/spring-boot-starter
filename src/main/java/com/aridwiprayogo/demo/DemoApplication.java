@@ -14,17 +14,17 @@ public class DemoApplication {
 
     @Bean
     public CommandLineRunner runner(CarRepository repository){
-        return (String... args) ->{
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
-            repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
+        return args -> {
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
+            repository.save(new Car("Toyota", "Avanza", "black", "3400", 2020));
             repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
             repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
             repository.save(new Car("Toyota","Avanza", "black", "3400", 2020));
